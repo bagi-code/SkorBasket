@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/teama"
+                        android:text="TIM A"
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/namateama"
+                        android:textSize="10dp"
+                        android:text="--------------"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/scorteama"
+                        android:text="0"
+                        android:textSize="40dp"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btna3"
+                        android:text="+3 Points"
+                        android:onClick="pointa3"
+                        android:background="#ffffa924"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:id="@+id/btna2"
+                        android:text="+2 Points"
+                        android:onClick="pointa2"
+                        android:layout_margin="10dp"
+                        android:background="#ffffa924"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:id="@+id/btna1"
+                        android:text="+FREE THROWS"
+                        android:onClick="pointa1"
+                        android:background="#ffffa924"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="#999"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"></View>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/teamb"
+                        android:text="TIM B"
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/namateamb"
+                        android:textSize="10dp"
+                        android:text="--------------"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/scorteamb"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textSize="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnb3"
+                        android:onClick="pointb3"
+                        android:padding="10dp"
+                        android:text="+3 Points"
+                        android:background="#ffffa924"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:id="@+id/btnb2"
+                        android:text="+2 Points"
+                        android:layout_margin="10dp"
+                        android:onClick="pointb2"
+                        android:background="#ffffa924"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:id="@+id/btnb1"
+                        android:text="+FREE THROWS"
+                        android:onClick="pointb1"
+                        android:background="#ffffa924"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <Button
+                    android:id="@+id/btnreset"
+                    android:text="Ulangi"
+                    android:onClick="pointreset"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffa924"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
